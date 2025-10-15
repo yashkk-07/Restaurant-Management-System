@@ -46,8 +46,37 @@ cd Restaurant-Management-System
 # 3️⃣ Install dependencies
 npm install
 
-# 4️⃣ Create a .env file in the root and add your MongoDB URI
+# 4️⃣ Create a .env file in the backend folder and add your MongoDB URI
 MONGO_URI=your_mongodb_connection_string
 
 # 5️⃣ Start the server
 npm start
+🧩 Folder Structure
+Restaurant-Management-System/
+│
+├── backend/
+│   ├── models/          # MongoDB models (food, orders, etc.)
+│   ├── routes/          # Express routes
+│   ├── server.js        # Main backend server
+│   └── .env             # Environment variables (ignored by Git)
+│
+├── public/              # Frontend files (HTML, CSS, JS)
+├── package.json         # Project dependencies and scripts
+├── package-lock.json
+├── .gitignore           # Ignore node_modules and .env
+└── README.md            # Project documentation
+
+🧠 Future Enhancements
+💳 Add online payment gateway (Razorpay / Stripe)
+🧾 Generate digital invoices
+👤 Implement user login and authentication
+📊 Add admin dashboard with analytics
+
+👨‍🎓 Author
+
+Yash Kandhare
+GitHub: yashkk-07
+College Mini Project (B.E. IT)
+
+🪪 License
+This project is open-source and available under the MIT License.
