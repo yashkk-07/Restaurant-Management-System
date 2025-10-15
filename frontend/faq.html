@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spice Factory - FAQ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-orange-600">
+                <i class="fas fa-utensils"></i> The Spice Factory
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="faq.html" class="nav-link active">FAQ</a>
+                <a href="reservation.html" class="nav-link">Reservations</a>
+            </div>
+             <div class="flex items-center space-x-4">
+                <a href="order.html" id="cart-button" class="relative hidden">
+                    <i class="fas fa-shopping-cart text-xl text-gray-600 hover:text-orange-600"></i>
+                    <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                </a>
+                <div id="user-info" class="hidden items-center space-x-2">
+                    <span id="user-phone" class="text-sm font-medium"></span>
+                    <button onclick="logout()" class="text-sm text-red-500 hover:underline">Logout</button>
+                </div>
+                <a href="login.html" id="login-button" class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition text-sm font-medium">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6 animate-fade-in">
+        <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-orange-600">Frequently Asked Questions</h2>
+            <div class="space-y-8" id="faq-container">
+                <!-- FAQs will be injected here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12 border-t">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+            <p>&copy; 2024 The Spice Factory. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Designed for a College Mini Project.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
